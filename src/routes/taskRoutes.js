@@ -4,7 +4,7 @@ const { criarTarefa, listarTarefas, atualizarTarefa, excluirTarefa } = require('
 
 const router = express.Router();
 
-router.use(verificarToken); // Todas as rotas requerem autenticação
+router.use(verificarToken);
 router.post('/', criarTarefa);
 router.get('/', listarTarefas);
 router.put('/:id', atualizarTarefa);

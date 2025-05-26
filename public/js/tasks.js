@@ -35,7 +35,6 @@ document.addEventListener('DOMContentLoaded', () => {
                     listaTarefas.appendChild(tarefaDiv);
                 });
 
-                // Adiciona eventos aos botões "Editar"
                 document.querySelectorAll('.editar-btn').forEach(btn => {
                     btn.addEventListener('click', () => {
                         const id = btn.getAttribute('data-id');
@@ -54,7 +53,6 @@ document.addEventListener('DOMContentLoaded', () => {
                     });
                 });
 
-                // Adiciona eventos aos botões "Excluir"
                 document.querySelectorAll('.excluir-btn').forEach(btn => {
                     btn.addEventListener('click', () => {
                         const id = btn.getAttribute('data-id');

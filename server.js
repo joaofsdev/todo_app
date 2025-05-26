@@ -19,7 +19,7 @@ app.use(express.static('public'));
 app.use('/api/auth', authRoutes);
 app.use('/api/tarefas', taskRoutes);
 
-// Tratamento de erros genérico
+// Erros genérico
 app.use((err, req, res, next) => {
     console.error(err.stack);
     res.status(500).json({ mensagem: 'Erro interno do servidor' });
